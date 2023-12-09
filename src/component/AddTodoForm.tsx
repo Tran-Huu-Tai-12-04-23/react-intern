@@ -13,11 +13,13 @@ function AddTodoForm({ onAddTodo }: AddTodoFormProps) {
             <Button
                 type="primary"
                 onClick={() => {
-                    onAddTodo({
-                        name: nameTask,
-                        done: false,
-                    });
-                    setNameTask('');
+                    if (nameTask) {
+                        onAddTodo({
+                            name: nameTask,
+                            done: false,
+                        });
+                        setNameTask('');
+                    }
                 }}
             >
                 ADD
