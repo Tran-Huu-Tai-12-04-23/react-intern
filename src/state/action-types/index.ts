@@ -1,0 +1,7 @@
+export enum actionType {
+    REMOVE_TODO = 'REMOVE_TODO',
+    ADD_TODO = 'ADD_TODO',
+    CLEAR_TODO = 'CLEAR_TODO',
+    CHANGE_STATUS_TODO = 'CHANGE_STATUS_TODO',
+    LOAD_TODO = 'LOAD_TODO',
+}

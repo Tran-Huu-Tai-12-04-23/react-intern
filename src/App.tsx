@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import MainApp from './MainApp';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <div
+            className="App"
+            style={{
+                padding: '2rem',
+                margin: 0,
+                background: '#f3f3f3',
+                minHeight: 'calc(100vh - 4rem)',
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <h1>Welcome TodoApplication</h1>
+            <MainApp />
+        </div>
+    );
 }
 
 export default App;
